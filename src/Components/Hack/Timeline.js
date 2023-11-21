@@ -8,15 +8,15 @@ const Timeline = ({setShowForm}) => (
         <div className='timeline-head-cont'>Timeline</div>
         <div className='timeline-cards-cont'>
             <div className='timeline-cards-left'>
-                <Event day={"DAY 1 & 2"} title={"Get Set Go!"} description={"Launching ceremony of UI/UX Hackathon,Brainstorm with your team & work on solution."} date={"24th-25th Oct @7:00 PM"} />
-                <Event day={"Day 3"} title={"Crunch time!"} description={" Submit your Work as the Design Hackathon comes to an epic close."} date={"(Sun) 26th Oct - 10:00 PM"} classname={"timeline-d2"}/>
-                <Event day={"Day 4"} classname={"timeline-d3"} title={"The moment of truth!"} description={"The moment of truth! Mentors will review your work & shortlist some best solutions of given problem statement."} date={"(Mon )27th Oct - 7:00 PM"} />
+                <Event day={"DAY 1 & 2"} title={"Get Set Go!"} description={"Launching ceremony of UI/UX Hackathon,Brainstorm with your team & work on solution."} date={"24th-25th Nov @7:00 PM"} />
+                <Event day={"Day 3"} title={"Crunch time!"} description={" Submit your Work as the Design Hackathon comes to an epic close."} date={"(Sun) 26th Nov - 10:00 PM"} classname={"timeline-d2"}/>
+                <Event day={"Day 4"} classname={"timeline-d3"} title={"The moment of truth!"} description={"The moment of truth! Mentors will review your work & shortlist some best solutions of given problem statement."} date={"(Mon )27th Nov - 7:00 PM"} />
             </div>
             <div className='timeline-cards-right'>
 
-                <Event day={"Day 4"} classname={"timeline-d2"} title={"The moment of truth!"} description={"The moment of truth! Mentors will review your work & shortlist some best solutions of given problem statement."} date={"(Mon)27th Oct - 7:00 PM"} />
-                <Event day={"Day 3"} classname={"timeline-d3"} title={"Crunch time!"} description={" Submit your Work as the Design Hackathon comes to an epic close."} date={"(Sun) 26th Oct - 10:00 PM"} />
-                <Event day={"Day 5"} title={"Final reveal!!"} description={"Winners will be unvieled after  a live session by mentor and thier masterpieces will shine on our  official “Upskill mafia”  IG page."} date={"(Tue) 28th Oct - 8:00 PM"} />
+                <Event day={"Day 4"} classname={"timeline-d2"} title={"The moment of truth!"} description={"The moment of truth! Mentors will review your work & shortlist some best solutions of given problem statement."} date={"(Mon)27th Nov - 7:00 PM"} />
+                <Event day={"Day 3"} classname={"timeline-d3"} title={"Crunch time!"} description={" Submit your Work as the Design Hackathon comes to an epic close."} date={"(Sun) 26th Nov - 10:00 PM"} />
+                <Event day={"Day 5"} title={"Final reveal!!"} description={"Winners will be unvieled after  a live session by mentor and thier masterpieces will shine on our  official “Upskill mafia”  IG page."} date={"(Tue) 28th Nov - 8:00 PM"} />
             </div>
         </div>
         <div className='timeline-cta-cont'>
