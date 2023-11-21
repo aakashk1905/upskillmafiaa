@@ -36,7 +36,7 @@ const Navbar1 = () => {
     <motion.div className="mafia__navbar" initial='initial' animate='animate'>
       <motion.div className="mafia__navbar-links" variants={stagger}>
         <motion.div className="mafia__navbar-links_logo" variants={header} whileHover={{scale:1.2}}>
-          <a href="https://www.upskillmafia.com"><img src={logo} alt="LOGO"/></a>
+          <a href="https://upskillmafia.com"><img src={logo} alt="LOGO"/></a>
         </motion.div>
         <motion.div className="mafia__navbar-links_container" variants={stagger}>
           <motion.p variants={header} whileHover={{scale:1.1}}><a href="#peer" >PEER LEARNING</a></motion.p>
