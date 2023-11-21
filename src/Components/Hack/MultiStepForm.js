@@ -23,7 +23,7 @@ const MultiStepForm = ({setShowForm}) => {
       if (response.status === 201) {
         console.log('Form data saved successfully');
         alert('Registered successfully');
-        window.location.href = "https://www.upskillmafia.com/success";
+        window.location.href = "http://upskillmafia.com/success";
       } else {
         console.error('Failed to save form data');
       }
