@@ -11,7 +11,7 @@ const Success = () => {
             <div className='succ-text'>Join Upskillmafia Whatsapp Group Below to Get all Live Updates</div>
             <div className='succ-text'>(Please Add Your Team Member in the Group after Joining)</div>
             <div className='succ-conttt' >
-          <a href='https://chat.whatsapp.com/DWKvqWLW08fCrVXkTKUc7V' target="_blank" rel="noreferrer">
+          <a href='https://chat.whatsapp.com/BdXrIXUGrNm9DK8ZCQcKok' target="_blank" rel="noreferrer">
             <div className='succ-subcontainer' >
               <div className='succ-what'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
