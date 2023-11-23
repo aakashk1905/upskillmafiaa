@@ -24,7 +24,7 @@ const Hackstart = ({ setShowForm }) => {
                     <div className='hack-get-st-card'>
                         <div className='hack-get-st-card-num'>3</div>
                         <div className='hack-reg-now'>Submit <br /><b style={{ color: '#e3d34b' }}>Hackathon Task</b></div>
-                        <div className='hack-reg-text'> Work along with your team and Submit the task on 29 October</div>
+                        <div className='hack-reg-text'> Work along with your team and Submit the task on 26 November</div>
                         {/* <div className='hack-reg-btn'>Register Now</div> */}
                     </div>
                 </div>
