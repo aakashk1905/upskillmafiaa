@@ -13,7 +13,8 @@ const Hackstart = ({ setShowForm }) => {
                         <div className='hack-get-st-card-num'>1</div>
                         <div className='hack-reg-now'>Register <br /><b style={{ color: '#e3d34b' }}>Your Team!</b></div>
                         <div className='hack-reg-text'>  You can Register in a team of 2-4 members, here.</div>
-                        <div className='hack-reg-btn' onClick={() => setShowForm(true)}>Register Now</div>
+                        {/* <div className='hack-reg-btn' onClick={() => setShowForm(true)}>Register Now</div> */}
+                        <div className='hack-reg-btn' onClick={() => alert("Slots Full!!! Wait till Next Hackathon")}>Register Now</div>
                     </div>
                     <div className='hack-get-st-card'>
                         <div className='hack-get-st-card-num'>2</div>

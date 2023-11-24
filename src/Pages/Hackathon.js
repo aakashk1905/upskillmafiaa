@@ -31,7 +31,8 @@ const Hackathon = () => {
     return (
         <>
             {showForm && <div className={`form-box ${showForm ? 'show' : ''}`}><MultiStepForm setShowForm={setShowForm} /></div>}
-            <div className={`hack-btn mob-btn-hack ${showButton ? 'hideBtnMob' : ''}`} onClick={() => setShowForm(true)}>Register Now !</div>
+            {/* <div className={`hack-btn mob-btn-hack ${showButton ? 'hideBtnMob' : ''}`} onClick={() => setShowForm(true)}>Register Now !</div> */}
+            <div className={`hack-btn mob-btn-hack ${showButton ? 'hideBtnMob' : ''}`} onClick={() => alert("Slots Full!!! Wait till Next Hackathon")}>Register Now !</div>
             <HackHero setShowForm={setShowForm} />
             <HackWhy />
             <Hackstart setShowForm={setShowForm} />

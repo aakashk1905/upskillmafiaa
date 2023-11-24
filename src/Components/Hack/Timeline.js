@@ -21,7 +21,8 @@ const Timeline = ({setShowForm}) => (
         </div>
         <div className='timeline-cta-cont'>
             <div className='time-cta-text'>🚀 Ready to unleash your creative genius? </div>
-            <div className='time-cta-btn' onClick={()=>setShowForm(true)}>Register Now</div>
+            {/* <div className='time-cta-btn' onClick={()=>setShowForm(true)}>Register Now</div> */}
+            <div className='time-cta-btn' onClick={()=>alert("Slots Full!!! Wait till Next Hackathon")}>Register Now</div>
         </div>
     </div>
 );
