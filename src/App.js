@@ -21,11 +21,6 @@ function RedirectComponent() {
   const width = window.innerWidth;
   const searchParams = new URLSearchParams(window.location.search);
   const room = searchParams.get('room');
-  // console.log(width)
-  // useEffect(() => {
-  //   if (width >= 800)
-  //     window.location.href = "https://cosmos.video/v/6qqo-919q-tsug/office";
-  // }, [width]);
   useEffect(() => {
     if (width >= 800) {
       if (room) window.location.href = `https://cosmos.video/v/6qqo-919q-tsug/office/r/${room}`
@@ -72,6 +67,58 @@ function RedirectComponentE2() {
   }
   return null;
 }
+function RedirectComponentE3() {
+  const width = window.innerWidth;
+
+  const searchParams = new URLSearchParams(window.location.search);
+  const room = searchParams.get('room');
+  useEffect(() => {
+    if (width >= 800) {
+      if (room) window.location.href = `https://cosmos.video/v/hjfk-gmod-pgxg/office/r/${room}`
+      else window.location.href = `https://cosmos.video/v/hjfk-gmod-pgxg/office`;
+    }
+  }, [width, room]);
+  if (width < 800) {
+    return (<>
+      <div className='mobile-error-cont'>
+        <img src={error} alt="error" />
+        <h1 className='mobile-error'>
+          Please Open The Link From Your <span style={{ color: 'yellow' }}>Laptop or PC</span>
+        </h1>
+        <h2 className='mobile-error'>( It Won't Open on Mobile Phones )</h2>
+      </div>
+
+    </>)
+  }
+  return null;
+}
+function RedirectComponentE4() {
+  const width = window.innerWidth;
+
+  const searchParams = new URLSearchParams(window.location.search);
+  const room = searchParams.get('room');
+  useEffect(() => {
+    if (width >= 800) {
+      if (room) window.location.href = `https://cosmos.video/v/wgay-85i4-1kiv/office/r/${room}`
+      else window.location.href = `https://cosmos.video/v/wgay-85i4-1kiv/office`;
+    }
+  }, [width, room]);
+  if (width < 800) {
+    return (<>
+      <div className='mobile-error-cont'>
+        <img src={error} alt="error" />
+        <h1 className='mobile-error'>
+          Please Open The Link From Your <span style={{ color: 'yellow' }}>Laptop or PC</span>
+        </h1>
+        <h2 className='mobile-error'>( It Won't Open on Mobile Phones )</h2>
+      </div>
+
+    </>)
+  }
+  return null;
+}
+
+
 function RedirectComponent2() {
   const width = window.innerWidth;
   // console.log(width)
@@ -145,6 +192,8 @@ function App() {
         <Route path='/campus' element={<RedirectComponent />} />
         <Route path='/campus/stage' element={<RedirectComponent2 />} />
         <Route path='/campus/eventhall2' element={<RedirectComponentE2 />} />
+        <Route path='/campus/eventhall3' element={<RedirectComponentE3 />} />
+        <Route path='/campus/eventhall4' element={<RedirectComponentE4 />} />
         <Route path='/assignment/:num' element={<Assignment11 />} />
         <Route path='/whatsapp' element={<Whatsapp />} />
         <Route path='/hackathon' element={<Hackathon />} />
