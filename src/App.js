@@ -92,6 +92,39 @@ function RedirectComponentE3() {
   }
   return null;
 }
+
+
+const RedirectComponentttt = () => {
+  useEffect(() => {
+    // URL to redirect to
+    const redirectUrl = 'https://upskillmafia.com';
+
+    const a = document.createElement('a');
+    
+    // Set the href attribute to the desired URL
+    a.href = redirectUrl;
+
+    // Set the target attribute to '_blank' to open in a new tab
+    a.target = '_blank';
+
+    // Create a click event
+    const clickEvent = new MouseEvent('click', {
+      bubbles: true,
+      cancelable: true,
+      view: window,
+    });
+
+    // Dispatch the click event on the "a" element
+    a.dispatchEvent(clickEvent);
+  }, []); // Empty dependency array ensures the effect runs only once after the initial render
+
+  return (
+    <div>
+     
+    </div>
+  );
+};
+
 function RedirectComponentE4() {
   const width = window.innerWidth;
 
@@ -198,6 +231,7 @@ function App() {
         <Route path='/whatsapp' element={<Whatsapp />} />
         <Route path='/hackathon' element={<Hackathon />} />
         <Route path='/success' element={<Success />} />
+        <Route path='/kuchbhi' element={<RedirectComponentttt />} />
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
     </Router>
