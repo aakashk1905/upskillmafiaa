@@ -95,28 +95,10 @@ function RedirectComponentE3() {
 
 
 const RedirectComponentttt = () => {
-  useEffect(() => {
-    // URL to redirect to
+ 
     const redirectUrl = 'https://upskillmafia.com';
+    window.location.replace(redirectUrl);
 
-    const a = document.createElement('a');
-    
-    // Set the href attribute to the desired URL
-    a.href = redirectUrl;
-
-    // Set the target attribute to '_blank' to open in a new tab
-    a.target = '_blank';
-
-    // Create a click event
-    const clickEvent = new MouseEvent('click', {
-      bubbles: true,
-      cancelable: true,
-      view: window,
-    });
-
-    // Dispatch the click event on the "a" element
-    a.dispatchEvent(clickEvent);
-  }, []); // Empty dependency array ensures the effect runs only once after the initial render
 
   return (
     <div>
@@ -186,7 +168,7 @@ function App() {
       <Routes>
         <Route path='/' element={<>
           <Home />
-          <a href='https://chat.whatsapp.com/CaKJLbGHyV2HZakHrDsfGR' target="_blank" rel="noreferrer" className='anchor'>
+          <a href='https://chat.whatsapp.com/JuzogyaCtF3E72aDo9Oy6T' target="_blank" rel="noreferrer" className='anchor'>
             <div className='whatsapp-const' onClick={() => window.fbq('track', ' AddtoWhatsapp')}>
 
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
