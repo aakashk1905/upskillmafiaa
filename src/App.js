@@ -20,6 +20,7 @@ import error from "./Assests/error.gif";
 import Assignment11 from "./Assignments/Assignment11";
 import Hackathon from "./Pages/Hackathon";
 import Success from "./Pages/Success";
+import GoogleDocEmbed from "./Components/GoogleDocEmbed";
 
 function RedirectComponent() {
   const width = window.innerWidth;
@@ -109,12 +110,6 @@ function RedirectComponentE3() {
   return null;
 }
 
-const RedirectComponentttt = () => {
-  const redirectUrl = "https://upskillmafia.com";
-  window.location.replace(redirectUrl);
-
-  return <div></div>;
-};
 
 function RedirectComponentE4() {
   const width = window.innerWidth;
@@ -300,8 +295,9 @@ function App() {
         <Route path="/english" element={<English />} />
         <Route path="/hackathon" element={<Hackathon />} />
         <Route path="/success" element={<Success />} />
-        <Route path="/kuchbhi" element={<RedirectComponentttt />} />
+        <Route path="/dailytask" element={<GoogleDocEmbed />} />
         <Route path="*" element={<Navigate replace to="/" />} />
+        
       </Routes>
     </Router>
   );
