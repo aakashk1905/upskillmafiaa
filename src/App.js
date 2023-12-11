@@ -110,7 +110,6 @@ function RedirectComponentE3() {
   return null;
 }
 
-
 function RedirectComponentE4() {
   const width = window.innerWidth;
 
@@ -206,7 +205,7 @@ function App() {
             <>
               <Home />
               <a
-                href="https://chat.whatsapp.com/JuzogyaCtF3E72aDo9Oy6T"
+                href="https://chat.whatsapp.com/Dk34YejxXMoEtJWTTZd4LB"
                 target="_blank"
                 rel="noreferrer"
                 className="anchor"
@@ -297,7 +296,6 @@ function App() {
         <Route path="/success" element={<Success />} />
         <Route path="/dailytask" element={<GoogleDocEmbed />} />
         <Route path="*" element={<Navigate replace to="/" />} />
-        
       </Routes>
     </Router>
   );

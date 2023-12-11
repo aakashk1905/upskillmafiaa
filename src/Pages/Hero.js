@@ -140,7 +140,7 @@ const Hero = () => {
           {/* </motion.div> */}
         </div>
         <motion.div className='hero-whatsapp-container' variants={btnGroup} >
-          <a href='https://chat.whatsapp.com/JuzogyaCtF3E72aDo9Oy6T' target="_blank" rel="noreferrer">
+          <a href='https://chat.whatsapp.com/Dk34YejxXMoEtJWTTZd4LB' target="_blank" rel="noreferrer">
             <motion.div className='hero-whatsapp-subcontainer' whileHover={{ scale: 1.05 }} onClick={() => window.fbq('track', ' AddtoWhatsapp')}>
               <div className='hero-whatsapp'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
