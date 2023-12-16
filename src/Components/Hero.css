@@ -197,6 +197,9 @@
   .hero-nav-cont {
     padding: 0 10px;
   }
+  .hero-nav-cont img{
+    width: 80px;
+  }
 
   .hero-nav-login {
     width: 70px;

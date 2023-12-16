@@ -17,7 +17,7 @@ const HackHero = ({setShowForm}) => {
                     <img src={hackheroleft} alt="hackhero" />
                 </div>
                 <div className='hack-hero-right'>
-                    <div className='hack-head-cont'>
+                    <div className='hack-head-contt'>
                         <div className='virtual'>The Virtual</div>
                         <div className='ux-hack'>UI/UX Hackathon</div>
                         <img className='hackstar' src={hackstar} alt="star" />
