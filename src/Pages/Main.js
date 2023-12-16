@@ -4,7 +4,7 @@ import Pros from "../Components/Pros";
 import Discover from "../Components/Discover";
 import Elevate from "../Components/Elevate";
 import Uhackathon from "../Components/UHackathon";
-import Hall from "../Components/Hall";
+// import Hall from "../Components/Hall";
 import Curriculum from "../Components/Curriculum";
 import Stories from "../Components/Stories";
 import Footer from "../Components/Footer";
@@ -40,7 +40,7 @@ const Main = () => {
         <div
           className={`hack-btn mob-btn-hack ${showButton ? "hideBtnMob" : ""}`}
         >
-          Join Now
+          Join Now For Free
         </div>
       </a>
       <Hero />
@@ -48,7 +48,7 @@ const Main = () => {
       <Discover />
       <Elevate />
       <Uhackathon />
-      <Hall />
+      {/* <Hall /> */}
       <Curriculum />
       <Stories />
       <Footer />

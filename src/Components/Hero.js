@@ -37,7 +37,7 @@ const Hero = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="hero-cta">Join Now</div>
+            <div className="hero-cta">Join Now For Free</div>
           </a>
         </div>
         <div className="hero-abs-img-cont">

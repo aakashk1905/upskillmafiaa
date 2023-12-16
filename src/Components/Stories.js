@@ -1,5 +1,6 @@
 import React from "react";
 import "./Stories.css";
+import "./Hall.css";
 import Carousel from "./Carousel";
 const Stories = () => {
   const items = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"];
@@ -23,7 +24,7 @@ const Stories = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <div className="hall-cta">Join Now</div>
+          <div className="hall-cta">Join Now For Free</div>
         </a>
       </div>
     </div>

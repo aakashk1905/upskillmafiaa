@@ -131,8 +131,14 @@
   gap: 5px;
 }
 
-.faq-q-text{
+.faq-q-text {
   width: 90%;
+  color: rgba(227, 211, 75, 0.77);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 @media screen and (max-width: 600px) {
   .foot-head {
@@ -151,7 +157,7 @@
     padding: 20px 0;
     gap: 50px;
   }
-  .foot-cont{
+  .foot-cont {
     padding-bottom: 90px;
   }
 }

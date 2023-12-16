@@ -140,7 +140,7 @@
 .hero-cta {
   z-index: 1;
   border-radius: 7px;
-  background: linear-gradient(91deg, #ecb430 6%, #18b06d 122.89%);
+  background: #f3a200;
   box-shadow: 0px 4px 20.4px 0px rgba(0, 0, 0, 0.25);
   display: flex;
   width: 284px;
@@ -173,8 +173,8 @@
 }
 
 @media screen and (max-height: 720px) {
-  .hero-inner-cont{
-    gap:0
+  .hero-inner-cont {
+    gap: 0;
   }
   .hero-nav-cont {
     box-sizing: border-box;
@@ -197,7 +197,7 @@
   .hero-nav-cont {
     padding: 0 10px;
   }
-  .hero-nav-cont img{
+  .hero-nav-cont img {
     width: 80px;
   }
 

@@ -44,7 +44,7 @@
 }
 .pros-main-cont {
   width: 95%;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   display: flex;
   position: relative;
