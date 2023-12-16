@@ -1,0 +1,225 @@
+.disc-cont {
+  box-sizing: border-box;
+  justify-content: center;
+  padding: 30px 0 66px 0;
+  gap: 65px;
+  background-image: url("../Assests/discbg.png");
+  background-size: cover;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.disc-head-cont {
+  margin-top: 36px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 11px;
+}
+.disc-sub-head {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 151.884%; /* 30.377px */
+  text-transform: capitalize;
+}
+
+.disc-head {
+  background: linear-gradient(90deg, #eab430 0.12%, #4fb15d 99.94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 68px; /* 170% */
+  text-transform: capitalize;
+}
+.disc-main-cont {
+  width: 90%;
+  justify-content: center;
+  /* align-items: center; */
+  display: flex;
+  position: relative;
+  gap: clamp(20px, 2vw, 50px);
+}
+
+.disc-pts-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+}
+
+.disc-pts {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 400px;
+  height: 132.803px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  border-radius: 24px;
+  border: 2px solid #3fff80;
+  background: #031219;
+  box-shadow: 5px 2px 4px 0px #51b846;
+  background: #031219;
+  padding: 21px;
+  box-sizing: border-box;
+  gap: 10px;
+}
+.disc-pts span {
+  width: 60%;
+  color: rgba(255, 223, 139, 0.89);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 151.884%; /* 27.339px */
+  text-transform: capitalize;
+}
+
+.disc-vid {
+  position: relative;
+  width: 450px;
+  height: 420px;
+  flex-shrink: 0;
+  border-radius: 21px;
+  border: 1px solid #ffe827;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.74) 0%,
+    rgba(19, 0, 0, 0.69) 100%
+  );
+  background-image: url("../Assests/vid.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 22px;
+  border: 1px solid #e3d34b;
+  box-shadow: 15px 11px 107px 0px rgba(15, 153, 0, 0.38);
+}
+
+.disc-abs-num {
+  position: absolute;
+  background-color: #08171c;
+  border-radius: 50%;
+  border: 3px solid rgba(227, 211, 75, 0.66);
+  width: 47px;
+  height: 47px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #e3d34b;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  left: -57px;
+}
+
+.disc-abs-lebel {
+  position: absolute;
+  color: #ffdf8b;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+
+  bottom: -40px;
+  left: 70px;
+}
+
+@media screen and (max-width: 1000px) {
+  .disc-cont {
+    gap: 20px;
+  }
+  .disc-main-cont {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .disc-cont {
+    gap: 50px;
+  }
+  .disc-head-cont {
+    width: 90%;
+    padding-bottom: 20px;
+  }
+  .disc-sub-head {
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 151.884%; /* 30.377px */
+    text-transform: capitalize;
+  }
+
+  .disc-head {
+    font-size: 32px;
+    line-height: normal;
+  }
+  .disc-main-cont {
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 90px;
+  }
+
+  .disc-pts-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 46px;
+  }
+
+  .disc-pts {
+    width: 95%;
+  }
+  .disc-pts span {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .disc-vid {
+    position: relative;
+    width: 95%;
+    height: 90vw;
+  }
+
+  .disc-abs-num {
+    left: calc(50% - 25px);
+    top: -25px;
+  }
+
+  .disc-abs-lebel {
+    font-size: clamp(12px, 5vw, 20px);
+    bottom: -40px;
+    left: calc(50% - 145px);
+  }
+}

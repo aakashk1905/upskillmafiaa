@@ -1,0 +1,97 @@
+.st-cont {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 30px 0;
+  background-image: url("../Assests/storiesbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.st-head {
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+
+  background: linear-gradient(
+    90deg,
+    #3e9d2f -5.6%,
+    rgba(255, 239, 91, 0.87) 118.25%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.st-sub-head {
+  color: #e6e6e6;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px; /* 200% */
+}
+
+.st-car-cont {
+  width: 90%;
+  min-width: 950px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.st-cta-cont {
+  width: 65%;
+  height: 304px;
+  border-radius: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  border: 3px solid rgba(227, 211, 75, 0.46);
+  background: linear-gradient(90deg, #203719 0.04%, #121f12 38.84%);
+}
+
+@media screen and (max-width: 1000px) {
+  .st-head {
+    font-family: Poppins;
+    font-size: 32px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .st-sub-head {
+    font-size: 18px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .st-car-cont {
+    width: 95%;
+    min-width: 0;
+  }
+  .st-cta-cont {
+    width: 95%;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    border: 3px solid rgba(227, 211, 75, 0.46);
+    background: linear-gradient(90deg, #203719 0.04%, #121f12 38.84%);
+  }
+}

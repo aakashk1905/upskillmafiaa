@@ -1,0 +1,134 @@
+.elev-cont {
+  box-sizing: border-box;
+  justify-content: center;
+  padding-bottom: 66px;
+  gap: 65px;
+  background-image: url("../Assests/elav.png");
+  background-size: cover;
+  height: auto;
+}
+.elev-head-cont {
+  margin-top: 36px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 11px;
+}
+.elev-sub-head {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 151.884%; /* 30.377px */
+  text-transform: capitalize;
+}
+
+.elev-head {
+  background: linear-gradient(90deg, #eab430 0.12%, #4fb15d 99.94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 68px; /* 170% */
+  text-transform: capitalize;
+}
+.elev-main-cont {
+  width: 90%;
+  justify-content: center;
+  /* align-items: center; */
+  display: flex;
+  position: relative;
+  gap: 50px;
+}
+
+.elev-card {
+  box-sizing: border-box;
+  border-radius: 13px;
+  border: 1px solid #79d66f;
+  background: linear-gradient(180deg, #031219 0%, rgba(3, 18, 25, 0.43) 100%);
+  width: 445px;
+  height: fit-content;
+  flex-shrink: 0;
+  padding: 35px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.elev-card img {
+  width: 100%;
+}
+
+.elev-card-head {
+  color: #51b846;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.elev-card-text {
+  color: rgba(227, 211, 75, 0.92);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 1000px) {
+  .elev-main-cont {
+    flex-wrap: wrap;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .elev-cont {
+    padding-bottom: 66px;
+  }
+  .elev-head-cont {
+    width: 90%;
+  }
+  .elev-sub-head {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .elev-head {
+    font-size: 32px;
+    line-height: normal;
+  }
+  .elev-main-cont {
+    width: 95%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .elev-card {
+    width: 95%;
+    padding: 25px;
+  }
+  .elev-card img {
+    width: 100%;
+  }
+
+  .elev-card-head {
+    font-size: 24px;
+    font-style: normal;
+  }
+  .elev-card-text {
+    font-size: 16px;
+  }
+}

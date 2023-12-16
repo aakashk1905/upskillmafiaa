@@ -1,0 +1,236 @@
+.hero-inner-cont {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../Assests/herobg1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-nav-cont {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding: 0 35px;
+  z-index: 1;
+}
+.hero-nav-btn-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 1;
+}
+.hero-nav-login {
+  border-radius: 8px;
+  border: 1px solid #e3d34b;
+  background: #070a15;
+  display: flex;
+  width: 99px;
+  height: 43px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  color: rgba(227, 211, 75, 0.92);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 19.2px */
+  z-index: 1;
+}
+
+.hero-nav-signup {
+  border-radius: 8px;
+  background: linear-gradient(91deg, #ecb430 0.57%, #4ab15e 114.72%);
+  display: flex;
+  width: 147px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  color: #0a0000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 19.2px */
+  z-index: 1;
+}
+
+.hero-main-cont {
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  z-index: 1;
+}
+
+.hero-head {
+  color: #eee;
+  text-align: center;
+  text-shadow: 7px -4px 16px rgba(0, 0, 0, 0.66);
+
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 128.25%; /* 61.56px */
+  z-index: 1;
+}
+.hero-head-col {
+  background: linear-gradient(91deg, #ecb430 28.38%, #4cb15d 68.32%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Poppins;
+  text-shadow: none;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 128.25%;
+  z-index: 1;
+  -webkit-text-stroke: 1pt #434343;
+}
+
+.hero-sub-head {
+  color: #ffdf8b;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  z-index: 1;
+}
+
+.hero-member-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 1;
+}
+.hero-member-cont span {
+  color: #5fdf74;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  z-index: 1;
+}
+
+.hero-cta {
+  z-index: 1;
+  border-radius: 7px;
+  background: linear-gradient(91deg, #ecb430 6%, #18b06d 122.89%);
+  box-shadow: 0px 4px 20.4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  width: 284px;
+  height: 52px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #000;
+  font-family: poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.hero-abs-img-cont {
+  width: 100vw;
+  position: absolute;
+  bottom: -30px;
+}
+.hero-abs-img-cont img {
+  width: 100%;
+}
+
+@media screen and (max-height: 720px) {
+  .hero-inner-cont{
+    gap:0
+  }
+  .hero-nav-cont {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 0 35px;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-inner-cont {
+    height: auto;
+    gap: 0;
+  }
+
+  .hero-nav-cont {
+    padding: 0 10px;
+  }
+
+  .hero-nav-login {
+    width: 70px;
+  }
+
+  .hero-nav-signup {
+    width: 100px;
+  }
+
+  .hero-main-cont {
+    width: 95vw;
+  }
+  .hero-head,
+  .hero-head-col {
+    width: 80%;
+    font-size: 34px;
+    text-align: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 140%; /* 44.8px */
+  }
+  .hero-sub-head {
+    width: 80%;
+  }
+
+  .hero-abs-img-cont {
+    width: 100vw;
+    position: relative;
+    bottom: -13px;
+    display: flex;
+    justify-content: center;
+  }
+  .hero-abs-img-cont img {
+    width: 150%;
+  }
+}

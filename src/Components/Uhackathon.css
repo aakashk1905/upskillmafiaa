@@ -1,0 +1,121 @@
+.hack-cont {
+  box-sizing: border-box;
+  justify-content: center;
+  padding-bottom: 66px;
+  gap: 65px;
+  background-image: url("../Assests/elav.png");
+  background-size: cover;
+  width: 100vw;
+  background-repeat: no-repeat;
+}
+.hack-head-cont {
+  margin-top: 36px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 11px;
+}
+.hack-sub-head {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 151.884%; /* 30.377px */
+  text-transform: capitalize;
+}
+
+.hack-head {
+  background: linear-gradient(90deg, #eab430 0.12%, #4fb15d 99.94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 68px; /* 170% */
+  text-transform: capitalize;
+}
+.hack-main-cont {
+  width: 90%;
+  justify-content: center;
+  /* align-items: center; */
+  display: flex;
+  position: relative;
+  gap: 50px;
+}
+
+.hack-card {
+  box-sizing: border-box;
+  border-radius: 24px;
+  border: 1px solid #51b846;
+  width: 290px;
+  background: linear-gradient(180deg, #030901 0%, #102902 100%);
+  height: 400px;
+  flex-shrink: 0;
+  padding: 35px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.hack-card img {
+  width: 196px;
+}
+
+.hack-card-head {
+  color: #51b846;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.hack-card-text {
+  color: rgba(227, 211, 75, 0.92);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 1000px) {
+  .hack-main-cont{
+    width: 95%;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hack-head-cont {
+    width: 90%;
+  }
+  .hack-sub-head {
+    font-size: 16px;
+    line-height: normal; /* 30.377px */
+    text-transform: capitalize;
+  }
+
+  .hack-head {
+    font-size: 32px;
+    line-height: normal;
+  }
+  .hack-main-cont {
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    gap: 50px;
+    flex-wrap: nowrap;
+  }
+}

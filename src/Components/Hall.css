@@ -1,0 +1,236 @@
+.hall-cont {
+  box-sizing: border-box;
+  justify-content: center;
+  padding-bottom: 66px;
+  gap: 65px;
+  background-image: url("../Assests/elav.png");
+  background-size: cover;
+  width: 100vw;
+  background-repeat: no-repeat;
+}
+.hall-head-cont {
+  margin-top: 36px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 11px;
+}
+.hall-sub-head {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 151.884%; /* 30.377px */
+  text-transform: capitalize;
+}
+
+.hall-head {
+  background: linear-gradient(90deg, #eab430 0.12%, #4fb15d 99.94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 68px; /* 170% */
+  text-transform: capitalize;
+}
+.hall-main-cont {
+  width: 90%;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  gap: 50px;
+}
+
+.hall-card {
+  cursor: default;
+  box-sizing: border-box;
+  position: relative;
+
+  width: 280px;
+  border-radius: 27px;
+  border: 1px solid rgba(227, 211, 75, 0.47);
+  background: #031219;
+  height: 360px;
+
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  transition: all 1s;
+}
+
+.hall-card:hover {
+  transform: scale(1.1);
+}
+.hall-card img {
+  width: 100%;
+}
+
+.hall-card-head {
+  color: #51b846;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.hall-card-text {
+  padding: 0 10px;
+  color: rgba(255, 255, 255, 0.91);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.hall-card-names {
+  color: #d9d9d9;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 10px;
+}
+
+.hall-cta-cont {
+  border-radius: 12px;
+  border: 1px solid rgba(227, 211, 75, 0.46);
+  background: linear-gradient(90deg, #203719 0.04%, #121f12 38.84%);
+  height: 113px;
+  width: 940px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.hall-cta-text {
+  color: #e2e2e2;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 152.32%; /* 30.464px */
+  text-transform: capitalize;
+}
+
+.hall-cta {
+  border-radius: 7px;
+  border: 2px solid #000;
+  background: linear-gradient(91deg, #ecb430 6%, #18b06d 122.89%);
+  box-shadow: 0px 4px 20.4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  width: 200px;
+  height: 65px;
+
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+
+  color: #000;
+  font-family: poppins;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.hall-img-abs {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 50% !important;
+}
+.hall-dots {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .hall-main-cont {
+    width: 95%;
+    flex-wrap: wrap;
+  }
+  .hall-cta-cont {
+    box-sizing: border-box;
+    height: auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hall-head-cont {
+    width: 90%;
+  }
+  .hall-sub-head {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .hall-head {
+    font-size: 32px;
+    line-height: normal;
+  }
+  .hall-main-cont {
+    width: 100%;
+    justify-content: flex-start;
+    display: flex;
+    position: relative;
+    overflow: scroll;
+    gap: 0;
+    flex-wrap: nowrap;
+  }
+  .hall-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .hall-card {
+    margin: 0 20px;
+  }
+
+  .hall-card:hover {
+    transform: scale(1.1);
+  }
+  .hall-card img {
+    width: 100%;
+  }
+
+  .hall-cta-cont {
+    box-sizing: border-box;
+    height: auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+  }
+  .hall-card:hover {
+    transform: none;
+  }
+}

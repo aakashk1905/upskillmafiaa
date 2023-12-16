@@ -1,4 +1,38 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Open+Sans&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+.container1 {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #00121c;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+a:hover{
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+a:visited {
+  color: currentColor;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    height: auto;
+  }
+}
+
 body {
   margin: 0;
   line-height: normal;
@@ -34,13 +68,13 @@ body::-webkit-scrollbar {
 }
 @keyframes slide {
   0% {
-    opacity: 0.0;
+    opacity: 0;
     height: 0;
     width: 0;
   }
-  50%{
-    opacity:0.5;
-    height:50vh;
+  50% {
+    opacity: 0.5;
+    height: 50vh;
     width: 50vw;
   }
   100% {
@@ -52,12 +86,12 @@ body::-webkit-scrollbar {
 
 .mob-btn-hack {
   position: fixed !important;
-  bottom:1%;
-  right:5vw;
+  bottom: 1%;
+  right: 5vw;
   display: none !important;
   z-index: 11;
-  width:90vw !important;
-  height:60px !important;
+  width: 90vw !important;
+  height: 60px !important;
   font-size: 18px !important;
   padding: 5px !important;
 }
@@ -96,13 +130,13 @@ body {
     align-items: center;
     gap: 10px;
   }
-  .form-box{
+  .form-box {
     animation: none;
   }
   .mob-btn-hack {
     display: flex !important;
   }
-  .hideBtnMob{
+  .hideBtnMob {
     display: none !important;
   }
   .whatsapp-const {
@@ -131,4 +165,8 @@ body {
     text-align: center;
     line-height: normal;
   }
+}
+
+.foot-cont .faq-question::after {
+  display: none;
 }
