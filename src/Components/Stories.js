@@ -24,7 +24,7 @@ const Stories = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <div className="hall-cta">Join Now For Free</div>
+          <div className="hall-cta" onClick={() => window.fbq('track', ' AddtoWhatsapp')}>Join Now For Free</div>
         </a>
       </div>
     </div>

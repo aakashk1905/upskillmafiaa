@@ -39,6 +39,7 @@ const Main = () => {
       >
         <div
           className={`hack-btn mob-btn-hack ${showButton ? "hideBtnMob" : ""}`}
+          onClick={() => window.fbq('track', ' AddtoWhatsapp')}
         >
           Join Now For Free
         </div>
