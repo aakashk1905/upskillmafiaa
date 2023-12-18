@@ -48,12 +48,12 @@ class Catalogue extends Component {
     return (
       <div className="doc-cont">
         <div className="doc-title">
-          {`Daily Task - ${new Date().toLocaleDateString()}`}
+          {`Weekly Task `}
         </div>
         <div>
           <Document
             file={
-              "https://docs.google.com/document/d/1KOUQ7jBl3DOChL0xaIRKTLaSSgQRSqevXhXFGvrFC3c/export?format=pdf"
+              "https://docs.google.com/document/d/1e8h46S9_pVgnczwD_Qj8gIEFO40MORMLFoQg4m50Rzk/export?format=pdf"
             }
             onLoadSuccess={this.onDocumentLoadSuccess}
           >
@@ -66,3 +66,4 @@ class Catalogue extends Component {
 }
 
 export default Catalogue;
+
