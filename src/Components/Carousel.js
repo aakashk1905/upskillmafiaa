@@ -1,36 +1,38 @@
 import React, { useEffect, useState } from "react";
 import "./Carousel.css";
-import rev1 from "../Assests/rev1.svg";
-import rev2 from "../Assests/rev2.svg";
-import rev3 from "../Assests/rev3.svg";
+import ma1 from "../Assests/ma1.png";
+import fa1 from "../Assests/fa1.png";
+import fa2 from "../Assests/fa2.png";
+import fa3 from "../Assests/fa3.png";
+import ma2 from "../Assests/ma2.png";
 const Carousel = () => {
   const items = [
     {
-      img: rev2,
+      img: fa1,
       name: "Praneetha Singh Bekkam",
       from: "From Delhi",
       rev: "The interface is unique, and peer learning is fantastic. My team's support made the learning process perfect",
     },
     {
-      img: rev1,
+      img: ma1,
       name: "Yuvraj",
       from: "From Chennai",
       rev: "Upskillmafia Virtual Campus exceeded expectations. Peer learning, senior presence, and hackathons create a dynamic and engaging environment. Kudos for a thriving community, all for free!",
     },
     {
-      img: rev2,
+      img: fa2,
       name: "Shreya pawar",
       from: "From Chhatisgarh",
       rev: "Impressed with Upskillmafia's teaching methodology, peer learning, and mentor support. Confidence in the platform led to recommendations. Grateful for a free learning experience.",
     },
     {
-      img: rev3,
+      img: ma2,
       name: "Priyansh Aggarwal",
       from: "From Himachal",
       rev: "Initially skeptical, but Upskillmafia's free UIUX course surpassed expectations. Achieving top 3 in a hackathon was a highlight. Grateful for the free opportunity and newfound skills",
     },
     {
-      img: rev2,
+      img: fa3,
       name: "Jagriti",
       from: "From Maharashtra",
       rev: "Chose Upskillmafia over a paid UIUX platform, and it exceeded expectations. Learning UIUX for free, making friends, and reaching milestones in a short time left a lasting impact.",

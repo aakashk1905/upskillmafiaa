@@ -47,6 +47,7 @@
   align-items: flex-start;
   flex-direction: column;
   gap: 20px;
+  min-height: 254px;
 }
 
 .car-card-name-cont {
@@ -54,6 +55,11 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
+}
+.car-card-name-cont img{
+  width:40px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
 }
 
 .car-name {
@@ -64,6 +70,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  text-align: start;
 }
 .car-loc {
   color: #5ad94c;
