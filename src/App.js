@@ -294,7 +294,7 @@ function App() {
         <Route path="/english" element={<English />} />
         <Route path="/hackathon" element={<Hackathon />} />
         <Route path="/success" element={<Success />} />
-        <Route path="/dailytask" element={<GoogleDocEmbed />} />
+        <Route path="/weekly-task" element={<GoogleDocEmbed />} />
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
     </Router>

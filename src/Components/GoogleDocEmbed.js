@@ -34,10 +34,7 @@ class Catalogue extends Component {
     let { numPages } = this.state;
     while (i <= numPages) {
       items.push(
-        <Page
-          pageNumber={i}
-          key={i * Math.floor(Math.random() * 1000) + 1}
-        />
+        <Page pageNumber={i} key={i * Math.floor(Math.random() * 1000) + 1} />
       );
       i++;
     }
@@ -47,13 +44,11 @@ class Catalogue extends Component {
   render() {
     return (
       <div className="doc-cont">
-        <div className="doc-title">
-          {`Daily Task - ${new Date().toLocaleDateString()}`}
-        </div>
+        <div className="doc-title">{`Weekly Task `}</div>
         <div>
           <Document
             file={
-              "https://docs.google.com/document/d/1KOUQ7jBl3DOChL0xaIRKTLaSSgQRSqevXhXFGvrFC3c/export?format=pdf"
+              "https://docs.google.com/document/d/1e8h46S9_pVgnczwD_Qj8gIEFO40MORMLFoQg4m50Rzk/export?format=pdf"
             }
             onLoadSuccess={this.onDocumentLoadSuccess}
           >

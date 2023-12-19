@@ -1,0 +1,21 @@
+[33mea58038[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{0}: commit: old website back
+[33m1163897[m HEAD@{1}: commit: grp update
+[33mc0502b1[m HEAD@{2}: commit: dailytask embedded
+[33mcbb036b[m HEAD@{3}: commit: dailytask embedded
+[33mfd29f23[m HEAD@{4}: commit: grp links
+[33mf7aa9ee[m HEAD@{5}: commit: update grp link
+[33m6a19bf6[m HEAD@{6}: commit: test url
+[33me23f7b3[m HEAD@{7}: commit: test url
+[33m69b0961[m HEAD@{8}: commit: stop taking forms
+[33mb92bc2d[m HEAD@{9}: commit: Event hall routes added
+[33m58ac4dd[m HEAD@{10}: commit: date change
+[33m064ffef[m HEAD@{11}: commit: one click register
+[33m7271de1[m HEAD@{12}: commit: success page link update
+[33mfedcb67[m HEAD@{13}: commit: Timeline updated
+[33m0d7fc7e[m HEAD@{14}: commit: Package.json
+[33me917ee6[m HEAD@{15}: commit: Package.json
+[33m0d0585d[m HEAD@{16}: commit: success refferd to http
+[33mb61ae62[m HEAD@{17}: commit: added homepage in package.json
+[33m752c273[m HEAD@{18}: commit: date changed
+[33mbf7cd9e[m HEAD@{19}: Branch: renamed refs/heads/master to refs/heads/main
+[33mbf7cd9e[m HEAD@{21}: commit (initial): first commit
