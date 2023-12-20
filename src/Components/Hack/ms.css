@@ -32,6 +32,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  visibility: hidden;
 }
 .form-close {
   width: 60px;
@@ -44,7 +45,7 @@
 }
 .form-reg-head {
   position: absolute;
-  bottom: 110%;
+  bottom: 105%;
   color: #e2e2e2;
   font-family: Poppins;
   font-size: 32px;
@@ -54,7 +55,7 @@
 }
 .form-reg-head1 {
   position: absolute;
-  bottom: 106%;
+  bottom: 102%;
   color: #e2e2e2;
   font-family: Poppins;
   font-size: 11px;
