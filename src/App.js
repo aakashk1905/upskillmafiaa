@@ -21,17 +21,76 @@ import Assignment11 from "./Assignments/Assignment11";
 import Hackathon from "./Pages/Hackathon";
 import Success from "./Pages/Success";
 import GoogleDocEmbed from "./Components/GoogleDocEmbed";
+import Cookies from "js-cookie";
 
 function RedirectComponent() {
   const width = window.innerWidth;
   const searchParams = new URLSearchParams(window.location.search);
   const room = searchParams.get("room");
+  // useEffect(() => {
+  //   if (width >= 800) {
+  //     const email = Cookies.get("user_email");
+  //     if (!email) {
+  //       console.log(email);
+  //       window.location.href = `https://upskillmafia.com/dashboard`;
+  //     } else {
+  //       const fetchData = async () => {
+  //         try {
+  //           const response = await fetch(
+  //             `https://api.upskillmafia.com/api/v1/user/update-streak?email=${email}`
+  //           );
+  //           const data = await response.json();
+  //           setApiResponse(data);
+  //         } catch (error) {
+  //           console.error("Error fetching data:", error);
+  //         }
+  //       };
+  //       fetchData();
+
+  //       if (room)
+  //         window.location.href = `https://cosmos.video/v/6qqo-919q-tsug/office/r/${room}`;
+  //       else
+  //         window.location.href = `https://cosmos.video/v/6qqo-919q-tsug/office`;
+  //     }
+  //   }
+  // }, [width, room]);
+
   useEffect(() => {
     if (width >= 800) {
-      if (room)
-        window.location.href = `https://cosmos.video/v/6qqo-919q-tsug/office/r/${room}`;
-      else
-        window.location.href = `https://cosmos.video/v/6qqo-919q-tsug/office`;
+      const email = Cookies.get("user_email");
+      if (!email) {
+        // console.log(email);
+        window.location.href = "https://upskillmafia.com/dashboard";
+      } else {
+        const fetchData = async () => {
+          try {
+            const response = await fetch(
+              `https://api.upskillmafia.com/api/v1/user/update-streak?email=${email}`,
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              }
+            );
+            const data = await response.json();
+
+            // Check if fetch was successful (you might need to adjust this condition based on your API response structure)
+            if (data.success) {
+              if (room) {
+                window.location.href = `https://cosmos.video/v/6qqo-919q-tsug/office/r/${room}`;
+              } else {
+                window.location.href =
+                  "https://cosmos.video/v/6qqo-919q-tsug/office";
+              }
+            }
+          } catch (error) {
+            alert("something went wrong....Please try again!!!");
+          }
+        };
+
+        fetchData();
+      }
     }
   }, [width, room]);
 
@@ -57,13 +116,50 @@ function RedirectComponentE2() {
   const searchParams = new URLSearchParams(window.location.search);
   const room = searchParams.get("room");
   useEffect(() => {
+    //   if (width >= 800) {
+    //     if (room)
+    //       window.location.href = `https://cosmos.video/v/h8tj-5ba4-9p8c/office/r/${room}`;
+    //     else
+    //       window.location.href = `https://cosmos.video/v/h8tj-5ba4-9p8c/office`;
+    //   }
+    // }, [width, room]);
+
     if (width >= 800) {
-      if (room)
-        window.location.href = `https://cosmos.video/v/h8tj-5ba4-9p8c/office/r/${room}`;
-      else
-        window.location.href = `https://cosmos.video/v/h8tj-5ba4-9p8c/office`;
+      const email = Cookies.get("user_email");
+      if (!email) {
+        // console.log(email);
+        window.location.href = "https://upskillmafia.com/dashboard";
+      } else {
+        const fetchData = async () => {
+          try {
+            const response = await fetch(
+              `https://api.upskillmafia.com/api/v1/user/update-streak?email=${email}`,
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              }
+            );
+            const data = await response.json();
+
+            // Check if fetch was successful (you might need to adjust this condition based on your API response structure)
+            if (data.success) {
+              if (room)
+                window.location.href = `https://cosmos.video/v/h8tj-5ba4-9p8c/office/r/${room}`;
+              else
+                window.location.href = `https://cosmos.video/v/h8tj-5ba4-9p8c/office`;
+            }
+          } catch (error) {
+            alert("something went wrong....Please try again!!!");
+          }
+        };
+
+        fetchData();
+      }
     }
   }, [width, room]);
+
   if (width < 800) {
     return (
       <>
@@ -86,11 +182,47 @@ function RedirectComponentE3() {
   const searchParams = new URLSearchParams(window.location.search);
   const room = searchParams.get("room");
   useEffect(() => {
+    //   if (width >= 800) {
+    // if (room)
+    //   window.location.href = `https://cosmos.video/v/hjfk-gmod-pgxg/office/r/${room}`;
+    // else
+    //   window.location.href = `https://cosmos.video/v/hjfk-gmod-pgxg/office`;
+    //   }
+    // }, [width, room]);
+
     if (width >= 800) {
-      if (room)
-        window.location.href = `https://cosmos.video/v/hjfk-gmod-pgxg/office/r/${room}`;
-      else
-        window.location.href = `https://cosmos.video/v/hjfk-gmod-pgxg/office`;
+      const email = Cookies.get("user_email");
+      if (!email) {
+        // console.log(email);
+        window.location.href = "https://upskillmafia.com/dashboard";
+      } else {
+        const fetchData = async () => {
+          try {
+            const response = await fetch(
+              `https://api.upskillmafia.com/api/v1/user/update-streak?email=${email}`,
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              }
+            );
+            const data = await response.json();
+
+            // Check if fetch was successful (you might need to adjust this condition based on your API response structure)
+            if (data.success) {
+              if (room)
+                window.location.href = `https://cosmos.video/v/hjfk-gmod-pgxg/office/r/${room}`;
+              else
+                window.location.href = `https://cosmos.video/v/hjfk-gmod-pgxg/office`;
+            }
+          } catch (error) {
+            alert("something went wrong....Please try again!!!");
+          }
+        };
+
+        fetchData();
+      }
     }
   }, [width, room]);
   if (width < 800) {
@@ -116,11 +248,47 @@ function RedirectComponentE4() {
   const searchParams = new URLSearchParams(window.location.search);
   const room = searchParams.get("room");
   useEffect(() => {
+    //   if (width >= 800) {
+    // if (room)
+    //   window.location.href = `https://cosmos.video/v/wgay-85i4-1kiv/office/r/${room}`;
+    // else
+    //   window.location.href = `https://cosmos.video/v/wgay-85i4-1kiv/office`;
+    //   }
+    // }, [width, room]);
+
     if (width >= 800) {
-      if (room)
-        window.location.href = `https://cosmos.video/v/wgay-85i4-1kiv/office/r/${room}`;
-      else
-        window.location.href = `https://cosmos.video/v/wgay-85i4-1kiv/office`;
+      const email = Cookies.get("user_email");
+      if (!email) {
+        // console.log(email);
+        window.location.href = "https://upskillmafia.com/dashboard";
+      } else {
+        const fetchData = async () => {
+          try {
+            const response = await fetch(
+              `https://api.upskillmafia.com/api/v1/user/update-streak?email=${email}`,
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              }
+            );
+            const data = await response.json();
+
+            // Check if fetch was successful (you might need to adjust this condition based on your API response structure)
+            if (data.success) {
+              if (room)
+                window.location.href = `https://cosmos.video/v/wgay-85i4-1kiv/office/r/${room}`;
+              else
+                window.location.href = `https://cosmos.video/v/wgay-85i4-1kiv/office`;
+            }
+          } catch (error) {
+            alert("something went wrong....Please try again!!!");
+          }
+        };
+
+        fetchData();
+      }
     }
   }, [width, room]);
   if (width < 800) {
@@ -144,9 +312,43 @@ function RedirectComponent2() {
   const width = window.innerWidth;
   // console.log(width)
   useEffect(() => {
-    if (width >= 800)
-      window.location.href =
-        "https://cosmos.video/v/6qqo-919q-tsug/office/r/stage";
+    //   if (width >= 800)
+    // window.location.href =
+    //   "https://cosmos.video/v/6qqo-919q-tsug/office/r/stage";
+    // }, [width]);
+
+    if (width >= 800) {
+      const email = Cookies.get("user_email");
+      if (!email) {
+        // console.log(email);
+        window.location.href = "https://upskillmafia.com/dashboard";
+      } else {
+        const fetchData = async () => {
+          try {
+            const response = await fetch(
+              `https://api.upskillmafia.com/api/v1/user/update-streak?email=${email}`,
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              }
+            );
+            const data = await response.json();
+
+            // Check if fetch was successful (you might need to adjust this condition based on your API response structure)
+            if (data.success) {
+              window.location.href =
+                "https://cosmos.video/v/6qqo-919q-tsug/office/r/stage";
+            }
+          } catch (error) {
+            alert("something went wrong....Please try again!!!");
+          }
+        };
+
+        fetchData();
+      }
+    }
   }, [width]);
   if (width < 800) {
     return (
