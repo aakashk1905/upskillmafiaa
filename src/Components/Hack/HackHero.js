@@ -26,7 +26,7 @@ const HackHero = ({setShowForm}) => {
                         <span>Celebrating limitless Creativity!</span>
                     </div>
                     <div className='hack-cal-cont'>
-                        <div className='date-hack'><span>24th - 26th <br/>November</span><img className='hackcal'src={hackcal} alt="star" /></div>
+                        <div className='date-hack'><span>22nd - 24th <br/>December</span><img className='hackcal'src={hackcal} alt="star" /></div>
                         <div className='type-hack'><span>Group <br/>Participation</span><img src={hackgrp} className='hackgrp' alt="star" /></div>
                     </div>
                     <div className='hack-btn' onClick={()=>alert("Slots Full!!! Wait till Next Hackathon")}>Register Now !</div>
