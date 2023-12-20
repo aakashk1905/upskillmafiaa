@@ -18,7 +18,7 @@ const Success = () => {
         </div>
         <div className="succ-conttt">
           <a
-            href="https://chat.whatsapp.com/I4ippulCXYbL89B19oEdFa"
+            href="https://chat.whatsapp.com/BdXrIXUGrNm9DK8ZCQcKok"
             target="_blank"
             rel="noreferrer"
           >
