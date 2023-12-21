@@ -398,6 +398,20 @@ function Hindi() {
 }
 
 function App() {
+  useEffect(() => {
+    function unregisterServiceWorker() {
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .getRegistrations()
+          .then(function (registrations) {
+            for (let registration of registrations) {
+              registration.unregister();
+            }
+          });
+      }
+    }
+    unregisterServiceWorker();
+  }, []);
   return (
     <Router>
       <Routes>
