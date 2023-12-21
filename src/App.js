@@ -21,40 +21,14 @@ import Assignment11 from "./Assignments/Assignment11";
 import Hackathon from "./Pages/Hackathon";
 import Success from "./Pages/Success";
 import GoogleDocEmbed from "./Components/GoogleDocEmbed";
+import GoogleDocEmbed1 from "./Components/GoogleDocEmbed1";
 import Cookies from "js-cookie";
 
 function RedirectComponent() {
   const width = window.innerWidth;
   const searchParams = new URLSearchParams(window.location.search);
   const room = searchParams.get("room");
-  // useEffect(() => {
-  //   if (width >= 800) {
-  //     const email = Cookies.get("user_email");
-  //     if (!email) {
-  //       console.log(email);
-  //       window.location.href = `https://upskillmafia.com/dashboard`;
-  //     } else {
-  //       const fetchData = async () => {
-  //         try {
-  //           const response = await fetch(
-  //             `https://api.upskillmafia.com/api/v1/user/update-streak?email=${email}`
-  //           );
-  //           const data = await response.json();
-  //           setApiResponse(data);
-  //         } catch (error) {
-  //           console.error("Error fetching data:", error);
-  //         }
-  //       };
-  //       fetchData();
-
-  //       if (room)
-  //         window.location.href = `https://cosmos.video/v/6qqo-919q-tsug/office/r/${room}`;
-  //       else
-  //         window.location.href = `https://cosmos.video/v/6qqo-919q-tsug/office`;
-  //     }
-  //   }
-  // }, [width, room]);
-
+ 
   useEffect(() => {
     if (width >= 800) {
       const email = Cookies.get("user_email");
@@ -498,6 +472,7 @@ function App() {
         <Route path="/hackathon" element={<Hackathon />} />
         <Route path="/success" element={<Success />} />
         <Route path="/weekly-task" element={<GoogleDocEmbed />} />
+        <Route path="/hackathon-task" element={<GoogleDocEmbed1 />} />
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
     </Router>
