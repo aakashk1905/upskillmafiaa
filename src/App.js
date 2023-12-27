@@ -357,36 +357,35 @@ function RedirectComponent2() {
     // }, [width]);
 
     if (width >= 800) {
-      // const email = Cookies.get("user_email");
-      // if (!email) {
-      //   // console.log(email);
-      //   window.location.href = "https://upskillmafia.com/dashboard";
-      // } else {
-      //   const fetchData = async () => {
-      //     try {
-      //       const response = await fetch(
-      //         `https://api.upskillmafia.com/api/v1/user/update-streak?email=${email}`,
-      //         {
-      //           method: "POST",
-      //           headers: {
-      //             "Content-Type": "application/json",
-      //           },
-      //         }
-      //       );
-      //       const data = await response.json();
+      const email = Cookies.get("user_email");
+      if (!email) {
+        window.location.href = "https://upskillmafia.com/dashboard/stage";
+      } else {
+        const fetchData = async () => {
+          try {
+            const response = await fetch(
+              `https://api.upskillmafia.com/api/v1/user/update-streak?email=${email}`,
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              }
+            );
+            const data = await response.json();
 
-      //       // Check if fetch was successful (you might need to adjust this condition based on your API response structure)
-      //       if (data.success) {
-      window.location.href =
-        "https://cosmos.video/v/6qqo-919q-tsug/office/r/stage";
-      //   }
-      // } catch (error) {
-      //   alert("something went wrong....Please try again!!!");
-      // }
-      //   };
+            // Check if fetch was successful (you might need to adjust this condition based on your API response structure)
+            if (data.success) {
+              window.location.href =
+                "https://cosmos.video/v/6qqo-919q-tsug/office/r/stage";
+            }
+          } catch (error) {
+            alert("something went wrong....Please try again!!!");
+          }
+        };
 
-      //   fetchData();
-      // }
+        fetchData();
+      }
     }
   }, [width]);
   if (width < 800) {
