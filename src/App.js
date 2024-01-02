@@ -406,7 +406,7 @@ function RedirectComponent2() {
 }
 function Whatsapp() {
   useEffect(() => {
-    window.location.href = "https://chat.whatsapp.com/IAG4CrSEa0W7nJ22YOPbfB";
+    window.location.href = "https://chat.whatsapp.com/HeWKBOVlBp9IkfHLE53PhF";
   }, []);
   return null;
 }
