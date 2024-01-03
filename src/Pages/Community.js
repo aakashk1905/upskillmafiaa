@@ -38,7 +38,7 @@ const Community = () => {
                     </div>
                 </div>
                 <div className="community-cards-container">
-                <a href='https://chat.whatsapp.com/KizECrwOZINIOoTrjZqagN' target="_blank" rel="noreferrer">
+                <a href='https://chat.whatsapp.com/C551a1rsjAeCFhO6glWPIb' target="_blank" rel="noreferrer">
                 <div className="community-whatsapp" onClick={()=>window.fbq('track', ' AddtoWhatsapp')}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
                             <g clipPath="url(#clip0_1_879)">
