@@ -445,7 +445,7 @@ function App() {
             <>
               <Home />
               <a
-                href="https://chat.whatsapp.com/KizECrwOZINIOoTrjZqagN"
+                href="https://chat.whatsapp.com/C551a1rsjAeCFhO6glWPIb"
                 target="_blank"
                 rel="noreferrer"
                 className="anchor"
