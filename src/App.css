@@ -34,13 +34,13 @@ body::-webkit-scrollbar {
 }
 @keyframes slide {
   0% {
-    opacity: 0.0;
+    opacity: 0;
     height: 0;
     width: 0;
   }
-  50%{
-    opacity:0.5;
-    height:50vh;
+  50% {
+    opacity: 0.5;
+    height: 50vh;
     width: 50vw;
   }
   100% {
@@ -52,12 +52,12 @@ body::-webkit-scrollbar {
 
 .mob-btn-hack {
   position: fixed !important;
-  bottom:1%;
-  right:5vw;
+  bottom: 1%;
+  right: 5vw;
   display: none !important;
   z-index: 11;
-  width:90vw !important;
-  height:60px !important;
+  width: 90vw !important;
+  height: 60px !important;
   font-size: 18px !important;
   padding: 5px !important;
 }
@@ -96,13 +96,13 @@ body {
     align-items: center;
     gap: 10px;
   }
-  .form-box{
+  .form-box {
     animation: none;
   }
   .mob-btn-hack {
     display: flex !important;
   }
-  .hideBtnMob{
+  .hideBtnMob {
     display: none !important;
   }
   .whatsapp-const {
@@ -114,7 +114,7 @@ body {
     align-items: center;
     gap: 10px;
     bottom: 10px;
-    left: 11vw;
+
     z-index: 11;
     border-radius: 10px;
     border: 2px solid #fff;
