@@ -410,6 +410,12 @@ function Whatsapp() {
   }, []);
   return null;
 }
+function Communityy() {
+  useEffect(() => {
+    window.location.href = "https://chat.whatsapp.com/HwuJjlNENcZ5tTbxMpv1Ov";
+  }, []);
+  return null;
+}
 function Telugu() {
   useEffect(() => {
     window.location.href = "https://chat.whatsapp.com/ItgE2udKs7p6xiADFFf0U9";
@@ -529,6 +535,7 @@ function App() {
         <Route path="/campus/learninghall2" element={<RedirectComponentL2 />} />
         <Route path="/assignment/:num" element={<Assignment11 />} />
         <Route path="/whatsapp" element={<Whatsapp />} />
+        <Route path="/community" element={<Communityy />} />
         <Route path="/telugu" element={<Telugu />} />
         <Route path="/tamil" element={<Tamil />} />
         <Route path="/hindi" element={<Hindi />} />
