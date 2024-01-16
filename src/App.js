@@ -406,7 +406,7 @@ function RedirectComponent2() {
 }
 function Whatsapp() {
   useEffect(() => {
-    window.location.href = "https://chat.whatsapp.com/HeWKBOVlBp9IkfHLE53PhF";
+    window.location.href = "https://chat.whatsapp.com/DK3fm2aMg5sBV5uOKXLKY6";
   }, []);
   return null;
 }
@@ -418,25 +418,25 @@ function Communityy() {
 }
 function Telugu() {
   useEffect(() => {
-    window.location.href = "https://chat.whatsapp.com/ItgE2udKs7p6xiADFFf0U9";
+    window.location.href = "https://chat.whatsapp.com/GjHLo7lHfmRBTqZ8Pg3xXO";
   }, []);
   return null;
 }
 function Tamil() {
   useEffect(() => {
-    window.location.href = "https://chat.whatsapp.com/DRBBaf0gN2T7mKPPzNM5GM";
+    window.location.href = "https://chat.whatsapp.com/EWhiLoLTWLtBsWmU6fq6ef";
   }, []);
   return null;
 }
 function English() {
   useEffect(() => {
-    window.location.href = "https://chat.whatsapp.com/JA2GXuyhYNuHZJ4651vBBe";
+    window.location.href = "https://chat.whatsapp.com/BxCMyKAPm1f5u5K2xlsS83";
   }, []);
   return null;
 }
 function Hindi() {
   useEffect(() => {
-    window.location.href = "https://chat.whatsapp.com/KQFmAsupot54dDUvFeeZBG";
+    window.location.href = "https://chat.whatsapp.com/F5MalFaSFqDJBkD7NgOOoj";
   }, []);
   return null;
 }
