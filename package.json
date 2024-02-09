@@ -2,7 +2,7 @@
   "name": "upskillmafia",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://upskillmafia.com/",
+  "homepage": "/uiux",
   "dependencies": {
     "-": "^0.0.1",
     "@cyntler/react-doc-viewer": "^1.14.1",
