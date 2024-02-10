@@ -403,7 +403,7 @@ function App() {
         <Route path="/uiux/success" element={<Success />} />
         <Route path="/uiux/weekly-task" element={<GoogleDocEmbed />} />
         <Route path="/uiux/hackathon-task" element={<GoogleDocEmbed1 />} />
-        <Route path="*" element={<Navigate replace to="/" />} />
+        
       </Routes>
     </Router>
   );
