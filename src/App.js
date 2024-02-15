@@ -206,6 +206,31 @@ function RedirectComponentL2() {
   return null;
 }
 
+function RedirectComponent3() {
+  const width = window.innerWidth;
+
+  useEffect(() => {
+    if (width >= 800) {
+      window.location.href =
+        "https://cosmos.video/v/6qqo-919q-tsug/office/r/stage";
+    }
+  }, [width]);
+  if (width < 800) {
+    return (
+      <>
+        <div className="mobile-error-cont">
+          <img src={error} alt="error" />
+          <h1 className="mobile-error">
+            Please Open The Link From Your{" "}
+            <span style={{ color: "yellow" }}>Laptop or PC</span>
+          </h1>
+          <h2 className="mobile-error">( It Won't Open on Mobile Phones )</h2>
+        </div>
+      </>
+    );
+  }
+  return null;
+}
 function RedirectComponent2() {
   const width = window.innerWidth;
   // console.log(width)
@@ -388,6 +413,7 @@ function App() {
         ></Route>
         <Route path="/uiux/campus" element={<RedirectComponent />} />
         <Route path="/uiux/campus/stage" element={<RedirectComponent2 />} />
+        <Route path="/uiux/stage" element={<RedirectComponent3 />} />
         <Route
           path="/uiux/campus/eventhall2"
           element={<RedirectComponentE2 />}
